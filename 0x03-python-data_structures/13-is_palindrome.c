@@ -8,16 +8,16 @@
  */
 int palindrome(listint_t **l, listint_t *r)
 {
-	int response;
+	int respons;
 
 	if (r != NULL)
 	{
-		response = palindrome(l, r->next);
-		if (response != 0)
+		respons = palindrome(l, r->next);
+		if (respons != 0)
 		{
-			response = (r->n == (*l)->n);
+			respons = (r->n == (*l)->n);
 			*l = (*l)->next;
-			return (response);
+			return (respons);
 		}
 		return (0);
 
