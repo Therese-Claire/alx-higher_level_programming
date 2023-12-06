@@ -1,41 +1,39 @@
 #include "lists.h"
-/**
- * palindrome - check if is palindrome with recursion
- * @l: l
- * @r: r
- *
- * Return: 1 palindrome, 0 not palindrome
- */
-int palindrome(listint_t **l, listint_t *r)
-{
-	int respons;
-
-	if (r != NULL)
-	{
-		respons = palindrome(l, r->next);
-		if (respons != 0)
-		{
-			respons = (r->n == (*l)->n);
-			*l = (*l)->next;
-			return (respons);
-		}
-		return (0);
-
-	}
-	return (1);
-}
 
 /**
- * is_palindrome - checks if a singly linked list is a palindrome.
- * @head: head of linked list
+ * is_palindrome - checks if a single linked list is a palindrome
  *
- * Return: 1 palindrome, 0 not palindrome
+ * @head: pointer to the head of the linked list
+ *
+ * Return: 1 if palindrome or 0 if not
  */
 int is_palindrome(listint_t **head)
 {
-	if (head == NULL)
+	listint_t *current = *head;
+	int length = 0, i, j;
+	int *array;
+
+	if (*head == NULL || (*head)->next == NULL)
+		return (1);
+	for (; current != NULL; current = current->next)
+		length++;
+	array = malloc(sizeof(int) * length);
+
+	current = *head;
+	for (i = 0; i < length; i++)
 	{
-		return (0);
+		array[i] = current->n;
+		current = current->next;
 	}
-	return (palindrome(head, *head));
+
+	for (i = length - 1, j = 0; i >= j; i--, j++)
+	{
+		if (array[j] != array[i])
+		{
+			free(array);
+			return (0);
+		}
+	}
+	free(array);
+	return (1);
 }
