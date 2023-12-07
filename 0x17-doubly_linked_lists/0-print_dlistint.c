@@ -3,6 +3,7 @@
 /**
  * print_dlistint - function that prints all the elements of dlistint_t list.
  * @h: pointer to the head of the doubly list
+ *
  * Return: The number of nodes
  */
 size_t print_dlistint(const dlistint_t *h)
