@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """LockedClass"""
 
+
 class LockedClass:
-    """blueprint of LockedClass object"""
+    """blueprint ofi LockedClass object"""
     __slots__ = ["first_name"]
