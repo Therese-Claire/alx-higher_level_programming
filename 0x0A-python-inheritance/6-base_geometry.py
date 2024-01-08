@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-"""Defines a class BaseGeometry with public intance method"""
+"""Defines a class BaseGeometry"""
+
 
 class BaseGeometry:
-    """Class BaseGeometry.
-    """
+    """An empty class BaseGeometry"""
     def area(self):
-        """Area function.
-
-
-        Raises:
-        Exception: if area is not implemented.
-        """
+        """raises an exception"""
         raise Exception("area() is not implemented")
