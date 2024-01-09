@@ -8,9 +8,11 @@ def to_json_string(my_obj):
 
 
     Args:
-        my_obj (str, optional): object to be converted to JSON
+        my_obj (type): object to be converted to JSON.
 
     Returns:
-        str: JSON representation.
+        str: JSON representation of object.
     """
+
+    # serializing json
     return json.dumps(my_obj)
