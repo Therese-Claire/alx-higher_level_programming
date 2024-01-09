@@ -13,6 +13,6 @@ def to_json_string(my_obj):
     Returns:
         str: JSON representation of object.
     """
+    x = json.dumps(my_obj)
 
-    # serializing json
-    return json.dumps(my_obj)
+    return x
