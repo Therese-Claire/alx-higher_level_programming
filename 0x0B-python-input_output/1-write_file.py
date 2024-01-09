@@ -13,8 +13,6 @@ def write_file(filename="", text=""):
     Returns:
             int: number of characters written.
     """
-    totalChar = 0
     with open(filename, 'w', encoding="utf-8") as f:
-        totalChar = f.write(text)
-
-        return totalChar
+        
+        return f.write(text)
