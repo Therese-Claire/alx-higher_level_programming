@@ -21,7 +21,7 @@ Passing the given text.
     <BLANKLINE>
 
 Passing an empty string as text.
->>> text_indentation("")
+    >>> text_indentation("")
 
 Passing a text with space at the beginning.
     >>> text_indentation("        Hello Breezy")
@@ -53,7 +53,7 @@ Passing None as text:
     >>> text_indentation(None)
     Traceback (most recent call last):
         ...
-TypeError: text must be a string
+    TypeError: text must be a string
 
 Passing no arguments to text_indentation.
     >>> text_indentation()
