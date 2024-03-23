@@ -56,4 +56,4 @@ All the following files are scripts of MySQL:
 | `relationship_state.py` | Contains the class definition of a `State` with a relationship with the class `City` |
 | `100-relationship_states_cities.py` | Creates the `State` "California" with the `City` "San Francisco" from the database `hbtn_0e_100_usa` |
 | `101-relationship_states_cities_list.py` | Lists all `State` objects and corresponding `City` objects, contained in the database `hbtn_0e_101_usa` |
-| `102-relationship_cities_states_list.py` | Lists all `City` objects from the database `hbtn_0e_101_usa` |
+| `102-relationship_cities_states_list.py` | Lists all `City` objects from the database `hbtn_0e_101_usa`
