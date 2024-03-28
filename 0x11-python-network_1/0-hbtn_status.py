@@ -11,4 +11,3 @@ if __name__ == "__main__":
         print('\t- type: {}'.format(type(res_page)))
         print('\t- content: {}'.format(res_page))
         print('\t- utf8 content: {}'.format(res_page.decode("utf-8")))
-
